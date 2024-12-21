@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  @apply min-h-screen bg-gray-100 flex justify-center;
+}
+
+.container {
+  @apply max-w-[480px] w-full min-h-screen relative flex flex-col;
+}
+
+/* Header Styles */
+.header {
+  @apply sticky top-0 bg-gradient-to-br from-[#6ab7ba] to-[#1A3B3C] text-white;
+}
+.header-top {
+  @apply p-5 flex justify-between items-center text-white;
+}
+
+.header-icons {
+  @apply flex gap-4 text-2xl;
+}
+
+.greeting {
+  @apply text-gray-300 m-0;
+}
+
+.name {
+  @apply m-0 text-2xl font-semibold;
+}
+
+/* Balance Section */
+.balance-section {
+  @apply text-center text-white p-5;
+}
+
+.balance-label {
+  @apply text-gray-300 m-0;
+}
+
+.balance {
+  @apply text-4xl my-2.5;
+}
+
+.percentage-badge {
+  @apply bg-white/10 inline-block px-4 py-1.5 rounded-full text-gray-300 text-sm;
+}
+
+/* Action Buttons */
+.action-buttons {
+  @apply flex justify-center gap-2.5 p-5;
+}
+
+.action-btn {
+  @apply border border-white py-3 rounded-full font-semibold cursor-pointer;
+}
+
+/* Transactions Section */
+.transactions-section {
+  @apply bg-gray-100 p-5 mt-5 flex-grow-0 mb-[4.5rem];
+}
+
+.transactions-header {
+  @apply flex justify-between items-center mb-5;
+}
+
+.transactions-header h3 {
+  @apply m-0;
+}
+
+.view-all {
+  @apply text-gray-600;
+}
+
+.transaction-item {
+  @apply flex justify-between items-center py-4 border-b border-gray-100;
+}
+
+.transaction-left {
+  @apply flex items-center gap-4;
+}
+
+.transaction-icon {
+  /* @apply text-2xl text-gray-600 ; */
+  @apply text-2xl text-yellow-500;
+}
+
+.transaction-info p {
+  @apply m-0;
+}
+
+.transaction-title {
+  @apply font-medium;
+}
+
+.transaction-date {
+  @apply text-gray-600 text-sm;
+}
+
+.transaction-right {
+  @apply text-right;
+}
+
+.transaction-right p {
+  @apply m-0;
+}
+
+.transaction-amount {
+  @apply font-semibold;
+}
+
+.transaction-percentage {
+  @apply text-sm;
+}
+
+.positive {
+  @apply text-green-500;
+}
+
+.negative {
+  @apply text-red-400;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  @apply fixed bottom-0 w-full max-w-[480px] bg-white flex justify-around py-3 text-2xl text-gray-600;
+}
